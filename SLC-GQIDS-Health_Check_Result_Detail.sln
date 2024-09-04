@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{BB6112E4-0605-48F8-B917-C8E016957C03}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\.editorconfig = Internal\.editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{FC864511-41A2-4E45-942E-A0E4131AB8B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompanionFiles", "CompanionFiles", "{BDBC30EC-2EFF-4531-87F1-A124852EE9AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Skyline DataMiner", "Skyline DataMiner", "{68FDC824-823B-44C4-9E47-E1E485801B02}"
+	ProjectSection(SolutionItems) = preProject
+		CompanionFiles\Skyline DataMiner\AboutThisFolder.md = CompanionFiles\Skyline DataMiner\AboutThisFolder.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{5D7C1F62-7E1B-4DD2-A89C-FBF0D4D15D23}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\ABOUT.md = Documentation\ABOUT.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F8938D60-51A0-4880-9CFC-19C66379BB5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{7EAA7187-0513-4D49-8031-6B36A73D3ECC}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\Code Analysis\qaction-debug.ruleset = Internal\Code Analysis\qaction-debug.ruleset
+		Internal\Code Analysis\qaction-release.ruleset = Internal\Code Analysis\qaction-release.ruleset
+		Internal\Code Analysis\stylecop.json = Internal\Code Analysis\stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Health_Check_Result_Detail", "Health_Check_Result_Detail", "{4D61187C-5848-485D-A389-3354BDA883D0}"
+	ProjectSection(SolutionItems) = preProject
+		Health_Check_Result_Detail.xml = Health_Check_Result_Detail.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{8B4EF1B8-656E-4490-BE74-485183777041}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Health_Check_Result_Detail_1", "Health_Check_Result_Detail_1\Health_Check_Result_Detail_1.csproj", "{AFDC3E32-E9D6-4D4A-BE1A-F9BC1A306655}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFDC3E32-E9D6-4D4A-BE1A-F9BC1A306655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDC3E32-E9D6-4D4A-BE1A-F9BC1A306655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDC3E32-E9D6-4D4A-BE1A-F9BC1A306655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDC3E32-E9D6-4D4A-BE1A-F9BC1A306655}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68FDC824-823B-44C4-9E47-E1E485801B02} = {BDBC30EC-2EFF-4531-87F1-A124852EE9AF}
+		{7EAA7187-0513-4D49-8031-6B36A73D3ECC} = {BB6112E4-0605-48F8-B917-C8E016957C03}
+		{4D61187C-5848-485D-A389-3354BDA883D0} = {FC864511-41A2-4E45-942E-A0E4131AB8B7}
+		{8B4EF1B8-656E-4490-BE74-485183777041} = {4D61187C-5848-485D-A389-3354BDA883D0}
+		{AFDC3E32-E9D6-4D4A-BE1A-F9BC1A306655} = {8B4EF1B8-656E-4490-BE74-485183777041}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B349BD2E-7E6A-4684-84CE-F273CFBE0FA9}
+	EndGlobalSection
+EndGlobal
