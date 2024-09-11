@@ -63,6 +63,12 @@ namespace HealthCheckResultDetail_1
 
 	public class HealthCheckResultDetail : IGQIDataSource, IGQIInputArguments, IGQIOnInit
 	{
+		private readonly string dmaNamePattern = @"Test case for ([^,]+)";
+		private readonly string indexPattern = @"Index\s""([^""]+)""";
+		private readonly string operatorPattern = @"Operator:\s(\w+)";
+		private readonly string thresholdPattern = @"Threshold:\s(.*?),\sOperator";
+		private readonly string actualPattern = @"Actual:\s(.*)";
+
 		private readonly GQIStringArgument _index = new GQIStringArgument("Index") { IsRequired = false };
 
 		private readonly Dictionary<string, string> operatorSymbols = new Dictionary<string, string>
@@ -172,13 +178,6 @@ namespace HealthCheckResultDetail_1
 
 		private List<GQIRow> ProcessRows(string[] reasonLines)
 		{
-			string dmaNamePattern = @"Test case for ([^,]+)";
-			string indexPattern = @"Index\s""([^""]+)""";
-			string operatorPattern = @"Operator:\s(\w+)";
-
-			string thresholdPattern = @"Threshold:\s(.*?),\sOperator";
-			string actualPattern = @"Actual:\s(.*)";
-
 			var rows = new List<GQIRow>();
 
 			for (int i = 1; i < reasonLines.Length; i++)
