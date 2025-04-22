@@ -5,7 +5,7 @@
 	<Type>Automation</Type>
 	<Author></Author>
 	<CheckSets>FALSE</CheckSets>
-	<Folder></Folder>
+	<Folder>DataMiner Health Check/Dashboard Scripts</Folder>
 
 	<Protocols>
 	</Protocols>
